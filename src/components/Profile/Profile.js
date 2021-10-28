@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultPic from './default.jpg';
-
+import s from './Profile.module.css'
 const Profile = ({
 name,
 tag,
@@ -9,12 +9,12 @@ avatar = defaultPic,
 stats = {},
 } ) => {
   return (
-    <div className="profile">
-  <div className="description">
+    <div className={s.profile}>
+  <div className={s.description}>
     <img
       src={avatar}
       alt="Аватар пользователя"
-      className="avatar"
+      className={s.avatar}
     />
     <p className="name">{name}</p>
     <p className="tag">@{tag}</p>
