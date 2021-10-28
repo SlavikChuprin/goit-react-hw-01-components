@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
 
-const TransactionHistory = ({ transactions} ) => {
+const TransactionHistory = ( {items} ) => {
   return (
     <table classname={s.transactionHistory}>
   <thead>
@@ -13,7 +13,7 @@ const TransactionHistory = ({ transactions} ) => {
   </thead>
 
   <tbody>
-    {transactions.map(transaction => (
+    {items.map(transaction => (
       <tr key={transaction.id}>
       <td>{transaction.type}</td>
       <td>{transaction.amount}</td>
