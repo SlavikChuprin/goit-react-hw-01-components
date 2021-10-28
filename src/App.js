@@ -20,7 +20,9 @@ function App() {
         title="Upload stats" 
         stats={statisticalData} 
         />
-
+        <Statistics 
+        stats={statisticalData} />
+        
      </div>
 
   );
