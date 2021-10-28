@@ -28,21 +28,15 @@ body {
   border-radius: 50%;
   box-shadow: 0px 0px 0px 4pt #fff;
 }
-.profile h3 {
+.profile p {
   color: #03315c;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 1.6em;
   margin-bottom: 0;
 }
-.profile h4 {
-  color: #56013d;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 1em;
-  margin-top: 0.5em;
-}
-.rates {
+
+.stats {
   position: absolute;
   width: 25em;
   height: 8em;
@@ -51,107 +45,32 @@ body {
   border-bottom-left-radius: 0.51em;
   border-bottom-right-radius: 0.51em;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
 }
-.profile p {
-  width: 15em;
-  height: 5em;
-  font-size: 1.2em;
-  margin: auto;
-  font-family: 'Roboto', sans-serif;
-  color: rgba(0, 0, 0, 0.6);
-  margin-top: 2.5em;
-}
-.box {
-  width: 8.33333333333em;
-  height: 8.33333333333em;
+
+.statsItem {
+  width: 30%;
   float: left;
   overflow: hidden;
-  position: relative;
+  text-align: center;
+  padding: 0;
 }
-svg {
-  position: absolute;
+
+.label {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
-.iconCon {
-  position: relative;
-  width: 5em;
-  height: 5em;
-  margin: auto;
-  z-index: 999;
-}
-.box h4 {
+.quantity {
+  display: block;
   color: #fff;
   font-size: 2em;
-  margin-top: 0;
-  z-index: 999999;
-}
-.iconCon .icon {
-  width: 3em;
-  height: 3em;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  fill: #fff;
-  z-index: 999;
-}
-.iconCon .ball {
-  position: Absolute;
-  width: 1em;
-  height: 1em;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: Red;
-  border-radius: 50%;
-  transition: ease 0.5s;
-}
-.h4h {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.box:hover {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
-}
-.boxhearth:hover .icon {
-  fill: red;
-}
-.box:hover {
-  cursor: pointer;
-}
-.boxview:hover .icon {
-  fill: #3399ff;
-}
-.boxbuddy:hover .icon {
-  fill: #ffcc99;
-}
-.proPage {
-  position: absolute;
-  top: 1em;
-  height: 3em;
-  width: 3em;
-}
-.ExitPage {
-  left: 1em;
-}
-.homePage {
-  right: 1em;
-}
-.proPage .icon {
-  height: 2em;
-  width: 2em;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  fill: #03315c;
-}
-.proPage .icon:hover {
-  fill: #1c69b0;
-  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
 }
